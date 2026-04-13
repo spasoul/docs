@@ -181,7 +181,16 @@
           }
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Changelog",
+          "href": "/changelog",
+          "icon": "clock-rotate-left"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/light.svg",
