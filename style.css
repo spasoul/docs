@@ -1,0 +1,377 @@
+/*
+ * PostHog Design System — Adapted for SOP Binder 2026
+ * Warm olive/sage palette, IBM Plex Sans typography, orange hover accents
+ * Reference: DESIGN.md (PostHog theme)
+ */
+
+/* ============================================================
+   1. CSS Custom Properties
+   ============================================================ */
+:root {
+  /* Primary palette */
+  --olive-ink: #4d4f46;
+  --deep-olive: #23251d;
+  --posthog-orange: #F54E00;
+  --amber-gold: #F7A501;
+
+  /* Surfaces */
+  --warm-parchment: #fdfdf8;
+  --sage-cream: #eeefe9;
+  --light-sage: #e5e7e0;
+  --warm-tan: #d4c9b8;
+  --hover-white: #f4f4f4;
+
+  /* Borders */
+  --sage-border: #bfc1b7;
+  --light-border: #b6b7af;
+
+  /* Text */
+  --muted-olive: #65675e;
+  --sage-placeholder: #9ea096;
+
+  /* Dark CTA */
+  --dark-cta: #1e1f23;
+
+  /* Focus */
+  --focus-blue: #3b82f6;
+}
+
+/* ============================================================
+   2. Global Typography & Body
+   ============================================================ */
+body {
+  color: var(--olive-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Override any pure white backgrounds */
+main,
+#content-area {
+  background-color: var(--warm-parchment);
+}
+
+/* Headings: bold, confident, tight tracking on large sizes */
+h1 {
+  color: var(--deep-olive);
+  font-weight: 800;
+  line-height: 1.20;
+  letter-spacing: -0.75px;
+}
+
+h2 {
+  color: var(--deep-olive);
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0;
+}
+
+h3 {
+  color: var(--deep-olive);
+  font-weight: 700;
+  line-height: 1.40;
+  letter-spacing: -0.5px;
+}
+
+h4, h5, h6 {
+  color: var(--deep-olive);
+  font-weight: 700;
+  line-height: 1.40;
+}
+
+/* Body text: generous line-height for content-heavy SOP reading */
+p,
+li,
+td,
+th {
+  color: var(--olive-ink);
+  line-height: 1.56;
+}
+
+/* Strong/bold within body */
+strong, b {
+  font-weight: 600;
+  color: var(--deep-olive);
+}
+
+/* ============================================================
+   3. Links & Hover Accent (PostHog Orange Flash)
+   ============================================================ */
+a {
+  color: var(--deep-olive);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--posthog-orange);
+}
+
+/* Content area links get underline */
+#content-area a:not([class]) {
+  text-decoration: underline;
+  text-decoration-color: var(--sage-border);
+  text-underline-offset: 2px;
+}
+
+#content-area a:not([class]):hover {
+  color: var(--posthog-orange);
+  text-decoration-color: var(--posthog-orange);
+}
+
+/* ============================================================
+   4. Sidebar
+   ============================================================ */
+#sidebar {
+  background-color: var(--warm-parchment);
+  border-right: 1px solid var(--sage-border);
+}
+
+/* Sidebar links */
+#sidebar a {
+  color: var(--muted-olive);
+  font-weight: 500;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+#sidebar a:hover {
+  color: var(--posthog-orange);
+  background-color: var(--hover-white);
+}
+
+/* Active sidebar item */
+#sidebar a[data-active] {
+  color: var(--deep-olive);
+  font-weight: 600;
+  background-color: var(--sage-cream);
+  border-left: 2px solid var(--posthog-orange);
+}
+
+/* ============================================================
+   5. Navbar
+   ============================================================ */
+#navbar {
+  background-color: var(--warm-parchment);
+  border-bottom: 1px solid var(--sage-border);
+}
+
+/* ============================================================
+   6. Cards & Containers
+   ============================================================ */
+.card,
+[class*="card"] {
+  background-color: var(--warm-parchment);
+  border: 1px solid var(--sage-border);
+  border-radius: 6px;
+  transition: border-color 0.15s ease;
+}
+
+.card:hover,
+[class*="card"]:hover {
+  border-color: var(--light-border);
+}
+
+.card:hover a,
+[class*="card"]:hover a {
+  color: var(--posthog-orange);
+}
+
+/* ============================================================
+   7. Tables (SOP metadata tables)
+   ============================================================ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: var(--sage-cream);
+  color: var(--deep-olive);
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 2px solid var(--sage-border);
+}
+
+td {
+  border-bottom: 1px solid var(--sage-border);
+}
+
+th, td {
+  padding: 10px 12px;
+}
+
+tr:hover td {
+  background-color: var(--hover-white);
+}
+
+/* ============================================================
+   8. Code Blocks
+   ============================================================ */
+code:not(pre code) {
+  background-color: var(--sage-cream);
+  color: var(--deep-olive);
+  border: 1px solid var(--sage-border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.875em;
+}
+
+pre {
+  background-color: var(--deep-olive) !important;
+  border: 1px solid var(--sage-border);
+  border-radius: 6px;
+}
+
+/* ============================================================
+   9. Callouts (Info, Warning, Tip, Note)
+   ============================================================ */
+.callout,
+[class*="callout"] {
+  border-radius: 6px;
+  border-left-width: 3px;
+}
+
+/* ============================================================
+   10. Tabs Component
+   ============================================================ */
+[role="tablist"] {
+  border-bottom: 1px solid var(--sage-border);
+}
+
+[role="tab"] {
+  color: var(--muted-olive);
+  font-weight: 600;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+[role="tab"]:hover {
+  color: var(--posthog-orange);
+}
+
+[role="tab"][aria-selected="true"] {
+  color: var(--deep-olive);
+  border-bottom-color: var(--posthog-orange);
+}
+
+/* ============================================================
+   11. Accordion
+   ============================================================ */
+details {
+  border: 1px solid var(--sage-border);
+  border-radius: 6px;
+  background-color: var(--warm-parchment);
+}
+
+details summary {
+  color: var(--deep-olive);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+
+details summary:hover {
+  color: var(--posthog-orange);
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--sage-border);
+}
+
+/* ============================================================
+   12. Footer
+   ============================================================ */
+#footer,
+footer {
+  background-color: var(--sage-cream);
+  border-top: 1px solid var(--sage-border);
+  color: var(--muted-olive);
+}
+
+/* ============================================================
+   13. Table of Contents
+   ============================================================ */
+#table-of-contents a {
+  color: var(--muted-olive);
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+#table-of-contents a:hover {
+  color: var(--posthog-orange);
+}
+
+#table-of-contents a[data-active-deepest] {
+  color: var(--deep-olive);
+  font-weight: 600;
+}
+
+/* ============================================================
+   14. Scrollbar (subtle, warm-tinted)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sage-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-border);
+}
+
+/* ============================================================
+   15. Selection
+   ============================================================ */
+::selection {
+  background-color: rgba(245, 78, 0, 0.12);
+  color: var(--deep-olive);
+}
+
+/* ============================================================
+   16. Focus States (Accessibility)
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--focus-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   17. Dark Mode Overrides
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --olive-ink: #c8c9c2;
+    --deep-olive: #e5e7e0;
+    --warm-parchment: #1a1b16;
+    --sage-cream: #252620;
+    --light-sage: #2e3029;
+    --hover-white: #2a2b25;
+    --sage-border: #3d3e38;
+    --light-border: #4a4b44;
+    --muted-olive: #9ea096;
+    --dark-cta: #e5e7e0;
+  }
+}
+
+/* Also target Mintlify's dark class if used */
+.dark {
+  --olive-ink: #c8c9c2;
+  --deep-olive: #e5e7e0;
+  --warm-parchment: #1a1b16;
+  --sage-cream: #252620;
+  --light-sage: #2e3029;
+  --hover-white: #2a2b25;
+  --sage-border: #3d3e38;
+  --light-border: #4a4b44;
+  --muted-olive: #9ea096;
+  --dark-cta: #e5e7e0;
+}
