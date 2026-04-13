@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SOP Binder 2026",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,76 +11,155 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "SOPs",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Overview",
+            "pages": ["index"]
+          },
+          {
+            "group": "Part I — Arrival & Emotional Intelligence",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "sops/arrival-emotional-intelligence/OPR-EMO-001",
+              "sops/arrival-emotional-intelligence/GDN-EMO-001",
+              "sops/arrival-emotional-intelligence/SVC-EMO-001"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Part II — Intake & Consultation",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "sops/intake-consultation/GDN-CCG-001",
+              "sops/intake-consultation/GDN-CCG-002",
+              "sops/intake-consultation/GDN-CCG-003",
+              "sops/intake-consultation/GDN-CCG-007",
+              "sops/intake-consultation/GDN-CCG-009"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Part III — Assessment",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "sops/assessment/GDN-CCG-004",
+              "sops/assessment/GDN-CUR-001",
+              "sops/assessment/GDN-CUR-002",
+              "sops/assessment/GDN-CCG-008"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Part IV — Curated Program Design",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "sops/curated-program-design/GDN-CUR-003",
+              "sops/curated-program-design/GDN-CUR-004",
+              "sops/curated-program-design/GDN-CUR-005",
+              "sops/curated-program-design/GDN-CUR-006"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Part V — Spa Services",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "sops/spa-services/SVC-SPA-001",
+              "sops/spa-services/SVC-SPA-002",
+              "sops/spa-services/SVC-SPA-003",
+              "sops/spa-services/SVC-SPA-004",
+              "sops/spa-services/SVC-SPA-005",
+              "sops/spa-services/SVC-SPA-006",
+              "sops/spa-services/SVC-SPA-007",
+              "sops/spa-services/SVC-SPA-008",
+              "sops/spa-services/SVC-SPA-009"
+            ]
+          },
+          {
+            "group": "Part VI — Longevity & Wellness",
+            "pages": [
+              "sops/longevity-wellness/SVC-LNG-001",
+              "sops/longevity-wellness/SVC-LNG-002",
+              "sops/longevity-wellness/SVC-LNG-003",
+              "sops/longevity-wellness/SVC-LNG-004",
+              "sops/longevity-wellness/SVC-LNG-005",
+              "sops/longevity-wellness/SVC-LNG-006",
+              "sops/longevity-wellness/SVC-LNG-007",
+              "sops/longevity-wellness/SVC-LNG-008",
+              "sops/longevity-wellness/SVC-LNG-009",
+              "sops/longevity-wellness/SVC-LNG-010",
+              "sops/longevity-wellness/SVC-LNG-011",
+              "sops/longevity-wellness/SVC-LNG-012",
+              "sops/longevity-wellness/SVC-LNG-013",
+              "sops/longevity-wellness/SVC-LNG-014",
+              "sops/longevity-wellness/SVC-LNG-015",
+              "sops/longevity-wellness/SVC-LNG-016"
+            ]
+          },
+          {
+            "group": "Part VII — Life Optimization",
+            "pages": [
+              "sops/life-optimization/SVC-LIF-001",
+              "sops/life-optimization/SVC-LIF-002",
+              "sops/life-optimization/SVC-LIF-003",
+              "sops/life-optimization/SVC-LIF-004"
+            ]
+          },
+          {
+            "group": "Part VIII — Movement & Fitness",
+            "pages": [
+              "sops/movement-fitness/SVC-MVT-001",
+              "sops/movement-fitness/SVC-MVT-002"
+            ]
+          },
+          {
+            "group": "Part IX — Follow-up & Ongoing Support",
+            "pages": [
+              "sops/followup-support/GDN-CCG-005",
+              "sops/followup-support/GDN-CCG-006"
+            ]
+          },
+          {
+            "group": "Part X — Facility Management",
+            "pages": [
+              "sops/facility-management/OPR-FAC-001",
+              "sops/facility-management/OPR-FAC-002",
+              "sops/facility-management/OPR-FAC-003",
+              "sops/facility-management/OPR-FAC-004"
+            ]
+          },
+          {
+            "group": "Part XI — Safety, Security & Operations",
+            "pages": [
+              "sops/safety-security-operations/OPR-SAF-001",
+              "sops/safety-security-operations/OPR-SAF-002",
+              "sops/safety-security-operations/OPR-SAF-003",
+              "sops/safety-security-operations/OPR-SAF-004",
+              "sops/safety-security-operations/OPR-SAF-005",
+              "sops/safety-security-operations/OPR-SAF-006",
+              "sops/safety-security-operations/OPR-SAF-007",
+              "sops/safety-security-operations/OPR-SAF-008",
+              "sops/safety-security-operations/OPR-SAF-009",
+              "sops/safety-security-operations/OPR-SAF-010",
+              "sops/safety-security-operations/OPR-SAF-011",
+              "sops/safety-security-operations/OPR-SAF-012",
+              "sops/safety-security-operations/OPR-SAF-013",
+              "sops/safety-security-operations/OPR-SAF-014",
+              "sops/safety-security-operations/OPR-SAF-015",
+              "sops/safety-security-operations/OPR-SAF-016",
+              "sops/safety-security-operations/OPR-SAF-017",
+              "sops/safety-security-operations/OPR-SAF-018",
+              "sops/safety-security-operations/OPR-SAF-019",
+              "sops/safety-security-operations/OPR-SAF-020",
+              "sops/safety-security-operations/OPR-SAF-021",
+              "sops/safety-security-operations/OPR-SAF-022",
+              "sops/safety-security-operations/OPR-SAF-023",
+              "sops/safety-security-operations/OPR-SAF-024",
+              "sops/safety-security-operations/OPR-SAF-025",
+              "sops/safety-security-operations/OPR-SAF-026",
+              "sops/safety-security-operations/OPR-SAF-027",
+              "sops/safety-security-operations/OPR-SAF-028",
+              "sops/safety-security-operations/OPR-WEL-001",
+              "sops/safety-security-operations/OPR-WEL-002"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
@@ -88,35 +167,13 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "SOP Binder 2026",
+      "href": "/"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
