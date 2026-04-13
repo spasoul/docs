@@ -12,10 +12,13 @@
     "tabs": [
       {
         "tab": "SOPs",
+        "icon": "align-justify",
         "groups": [
           {
             "group": "Overview",
-            "pages": ["index"]
+            "pages": [
+              "index"
+            ]
           },
           {
             "group": "Part I — Arrival & Emotional Intelligence",
@@ -157,10 +160,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": []
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
